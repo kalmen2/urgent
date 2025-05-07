@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Donate to Kalman Kamionka</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background: #f4f6f9;
+      margin: 0;
+      padding: 0;
+    }
+
+    .container {
+      max-width: 500px;
+      margin: 50px auto;
+      background: white;
+      padding: 30px;      box-shadow: 0 0 10px rgba(0,0,0,0.05);
+      border-radius: 10px;
+    }
+
+    h2 {
+      text-align: center;
+      color: #2c3e50;
+      margin-bottom: 30px;
+    }
+
+    label {
+      display: block;
+      margin-top: 15px;
+      font-weight: bold;
+    }
+
+    input, select {
+      width: 100%;
+      padding: 10px;
+      margin-top: 5px;
+      border-radius: 6px;
+      border: 1px solid #ccc;
+      font-size: 1em;
+    }
+
+    .donate-btn {
+      background: #e67e22;
+      color: white;
+      padding: 15px;
+      margin-top: 25px;
+      font-size: 1.1em;
+      border: none;
+      border-radius: 6px;
+      width: 100%;
+      cursor: pointer;
+    }
+
+    .donate-btn:hover {
+      background: #d35400;
+    }
+
+    .back-link {
+      display: block;
+      text-align: center;
+      margin-top: 20px;
+      text-decoration: none;
+      color: #888;
+      font-size: 0.9em;
+    }
+  </style>
+</head>
+<body>
+
+  <div class="container">
+    <h2>Complete Your Donation</h2>
+
+    <form>
+      <label for="name">Your Name</label>
+      <input type="text" id="name" placeholder="Optional or Anonymous" />
+
+      <label for="amount">Donation Amount</label>
+      <select id="amount">
+        <option value="$18">$18</option>
+        <option value="$36">$36</option>
+        <option value="$72">$72</option>
+        <option value="$100">$100</option>
+        <option value="$180">$180</option>
+        <option value="other">Other...</option>
+      </select>
+
+      <label for="method">Payment Method</label>
+      <select id="method">
+        <option>Credit Card</option>
+        <option>PayPal</option>
+        <option>CashApp</option>
+        <option>Zelle</option>
+      </select>
+
+      <button type="button" class="donate-btn">Continue</button>
+    </form>
+
+    <a href="index.html" class="back-link">← Go Back</a>
+  </div>
+
+</body>
+</html>
